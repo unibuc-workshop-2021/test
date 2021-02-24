@@ -23,11 +23,15 @@ int binarySearch(int arr[], int l, int r, int x)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 10, 20, 30, 40, 50};
+    #int arr[] = {1, 2, 3, 10, 20, 30, 40, 50};
 
-    int n = sizeof(arr) / sizeof(arr[0]);
+    #int n = sizeof(arr) / sizeof(arr[0]);
 	
-    int x = 40;
+    #int x = 40;
+	
+	/*
+		citeste array-ul din fisier
+	*/
 
     int rezultat = binarySearch(arr, 0, n - 1, x);
 
@@ -35,6 +39,8 @@ int main()
 		printf("Elementul nu este in array");
 	else
         printf("Element este in array la index %d", rezultat);
+	
+	/* afisarea in fisier */
 
     return 0;
 }
